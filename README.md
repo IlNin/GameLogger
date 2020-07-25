@@ -4,4 +4,4 @@ This was a very time-consuming, and yet rewarding, project. Before I could even 
 All in all, I'm quite happy with out the application turned out, especially its UI: my inspiration was a website called Backloggery, and I tried my best to replicate a subset of its features on my app.
 Sadly there's no written report this time since it wasn't asked by the professor.
 
-In order to compile this application you need Android Studio: just be aware that all the UI was made while keeping in mind the size of my phone's screen (4,65"), so on different types of screens it may appear quite a bit awkward. I know a good application should be scalable, but I just didn't have the time! :(
+In order to compile this application you need Android Studio: just be aware that all the UI was made while keeping in mind the size of my phone's screen (4,65"), so on different types of screens it may appear quite a bit awkward. I know a good application should be scalable across different devices, but I just didn't have the time to optimize! :(
