@@ -1,6 +1,8 @@
 # GameLogger
-An Android Application written in Kotlin that helps you keep track of your collection of videogames, and that I had to develop for the "Mobile and Cloud Applications" course.<br/>
-Features: <br/>
+An Android Application written in Kotlin that helps you keep track of your collection of videogames, and that I had to develop for the "Mobile and Cloud Applications" course.
+
+
+<b>Features<\b: <br/>
 - After making your account (or signing in using your Google profile), you can add your games by specifying their title, developer, platform and other stats, such as if you have beaten them.<br/>
 - Once added, you can apply a filter to your list of games, so you can easily figure out which ones you still need to beat, which ones are your favorites, which one you possess for a specific platform and so on. You can also delete games or edit information about them.<br/>
 - Your games will be saved on the Cloud using Firestore, so your archive will follow you across your devices.<br/>
