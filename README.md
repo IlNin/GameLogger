@@ -1,2 +1,5 @@
 # GameLogger
-An Android Application written in Kotlin that helps you keep track of your collection of videogames!
+An Android Application written in Kotlin that helps you keep track of your collection of videogames, and that I had to develop for the "Mobile and Cloud Applications" course.
+This was a very time-consuming, and yet rewarding, project. Before I could even write a line of code, I had to learn a lot of theory and follow countless tutorials so I could get the basics right on how to develop a Kotlin Android application. There was so much to unpack: the differences between activities and fragments, the concepts of ViewModels and LiveData, how to set up user-friendly layouts and navigation, how to communicate with Cloud databases in order to store and load data, how to offer more services by utilizing APIs, and so on. Even the mere act of adding a dynamic scrollable list, where the elements out of view are recycled in order to save up resources, can be a challenging task that requires multiple steps. 
+All in all, I'm quite happy with out the application turned out, especially its UI: my inspiration was a website called Backloggery, and I tried my best to replicate a subset of its features on my app.
+Sadly there's no report this time since it wasn't asked by the professor.
