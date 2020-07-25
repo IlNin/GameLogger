@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:clickable="false"
+        android:text="@string/latest_title_string"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/insert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/Title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/developer_string"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/insert_developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/Developer"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/Platform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/latest_platform_string"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Developer" />
+
+    <TextView
+        android:id="@+id/insert_platform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/Platform"
+        app:layout_constraintTop_toTopOf="@+id/Platform" />
+
+    <ImageView
+        android:id="@+id/beaten_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:translationX="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/Beaten"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Platform"
+        app:srcCompat="@drawable/check_big" />
+
+    <CheckBox
+        android:id="@+id/Beaten"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/beaten_recyclerview_string"
+        app:layout_constraintEnd_toStartOf="@+id/digital_image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/beaten_image"
+        app:layout_constraintTop_toBottomOf="@+id/Platform" />
+
+    <ImageView
+        android:id="@+id/digital_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:translationX="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/Digital"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Beaten"
+        app:layout_constraintTop_toBottomOf="@+id/Platform"
+        app:srcCompat="@drawable/digital_big" />
+
+    <CheckBox
+        android:id="@+id/Digital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/digital_recyclerview_string"
+        app:layout_constraintEnd_toStartOf="@+id/favorite_image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/digital_image"
+        app:layout_constraintTop_toBottomOf="@+id/Platform" />
+
+    <ImageView
+        android:id="@+id/favorite_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:drawingCacheQuality="auto"
+        android:translationX="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/Favorite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Digital"
+        app:layout_constraintTop_toBottomOf="@+id/Platform"
+        app:srcCompat="@drawable/star_big" />
+
+    <CheckBox
+        android:id="@+id/Favorite"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/favorite_recyclerview_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/favorite_image"
+        app:layout_constraintTop_toBottomOf="@+id/Platform" />
+
+    <TextView
+        android:id="@+id/Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/rating_string"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Beaten" />
+
+    <TextView
+        android:id="@+id/insert_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/Rating"
+        app:layout_constraintTop_toBottomOf="@+id/Beaten" />
+
+    <ImageView
+        android:id="@+id/info_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        android:translationY="-5dp"
+        app:layout_constraintEnd_toStartOf="@+id/edit_button"
+        app:layout_constraintTop_toBottomOf="@+id/Favorite"
+        app:srcCompat="@drawable/find_big" />
+
+    <ImageView
+        android:id="@+id/edit_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        android:translationY="-5dp"
+        app:layout_constraintEnd_toStartOf="@+id/delete_button"
+        app:layout_constraintTop_toBottomOf="@+id/Favorite"
+        app:srcCompat="@drawable/edit_big" />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:translationY="-5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Favorite"
+        app:srcCompat="@drawable/delete_big" />
+
+    <LinearLayout
+        android:id="@+id/upperLine"
+        android:layout_width="330dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insert_rating"></LinearLayout>
+
+    <TextView
+        android:id="@+id/insert_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

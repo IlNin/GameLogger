@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/edit_string"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:typeface="normal"
+            app:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="62dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/name_string"
+            android:textColor="@color/fui_bgEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+        <TextView
+            android:id="@+id/Developer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/developer_string"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+        <EditText
+            android:id="@+id/editDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Developer" />
+
+        <TextView
+            android:id="@+id/Console"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/platform_string"
+            android:textColor="@color/fui_bgEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDeveloper" />
+
+        <Spinner
+            android:id="@+id/spinnerPlatform"
+            android:layout_width="225dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Console" />
+
+        <TextView
+            android:id="@+id/Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/rating_string"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPlatform" />
+
+        <Spinner
+            android:id="@+id/spinnerRating"
+            android:layout_width="225dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Rating" />
+
+        <ImageView
+            android:id="@+id/beaten_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:translationX="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/Beaten"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRating"
+            app:srcCompat="@drawable/check_big" />
+
+        <CheckBox
+            android:id="@+id/Beaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/beaten_string"
+            app:layout_constraintEnd_toStartOf="@+id/digital_image"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/beaten_image"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRating" />
+
+        <ImageView
+            android:id="@+id/digital_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:translationX="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/Digital"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Beaten"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRating"
+            app:srcCompat="@drawable/digital_big" />
+
+        <CheckBox
+            android:id="@+id/Digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/digital_string"
+            app:layout_constraintEnd_toStartOf="@+id/favorite_image"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/digital_image"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRating" />
+
+        <ImageView
+            android:id="@+id/favorite_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:translationX="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/Favorite"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Digital"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRating"
+            app:srcCompat="@drawable/star_big" />
+
+        <CheckBox
+            android:id="@+id/Favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/favorite_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/favorite_image"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRating" />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/apply_changes_string"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Beaten" />
+
+        <TextView
+            android:id="@+id/Mandatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/mandatory_string"
+            android:textColor="@color/fui_bgEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

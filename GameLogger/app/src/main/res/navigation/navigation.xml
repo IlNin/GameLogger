@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.backloggery.Title.TitleFragment"
+        android:label="TitleFragment" >
+        <action
+            android:id="@+id/action_titleFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_titleFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@+id/navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.backloggery.About.AboutFragment"
+        android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.backloggery.Home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_titleFragment"
+            app:destination="@id/titleFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@+id/navigation" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_addgameFragment"
+            app:destination="@id/addgameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" >
+            <argument android:defaultValue="null"
+                android:name="list" />
+        </action>
+        <action
+            android:id="@+id/action_homeFragment_to_listgamesFragment"
+            app:destination="@id/listgamesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_deletegameFragment"
+            app:destination="@id/deletegameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_editgameFragment"
+            app:destination="@id/editgameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_infogameFragment"
+            app:destination="@id/infogameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/addgameFragment"
+        android:name="com.example.backloggery.AddGame.AddgameFragment"
+        android:label="AddgameFragment" />
+    <fragment
+        android:id="@+id/listgamesFragment"
+        android:name="com.example.backloggery.ListGames.ListgamesFragment"
+        android:label="ListgamesFragment" >
+        <action
+            android:id="@+id/action_listgamesFragment_to_deletegameFragment"
+            app:destination="@id/deletegameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_listgamesFragment_to_editgameFragment"
+            app:destination="@id/editgameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_listgamesFragment_to_addgameFragment"
+            app:destination="@id/addgameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_listgamesFragment_to_filterFragment"
+            app:destination="@id/filterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_listgamesFragment_to_eraselistFragment"
+            app:destination="@id/eraselistFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_listgamesFragment_to_infogameFragment"
+            app:destination="@id/infogameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/deletegameFragment"
+        android:name="com.example.backloggery.DeleteGame.DeletegameFragment"
+        android:label="DeletegameFragment" >
+        <argument
+            android:name="Title"
+            app:argType="string" />
+        <argument
+            android:name="Developer"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="Platform"
+            app:argType="string" />
+        <argument
+            android:name="Beaten"
+            app:argType="boolean" />
+        <argument
+            android:name="Digital"
+            app:argType="boolean" />
+        <argument
+            android:name="Favorite"
+            app:argType="boolean" />
+        <argument
+            android:name="Rating"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="Id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editgameFragment"
+        android:name="com.example.backloggery.EditGame.EditgameFragment"
+        android:label="EditgameFragment" >
+    <argument
+        android:name="Title"
+        app:argType="string" />
+    <argument
+        android:name="Developer"
+        app:argType="string"
+        app:nullable="true" />
+    <argument
+        android:name="Platform"
+        app:argType="string" />
+    <argument
+        android:name="Beaten"
+        app:argType="boolean" />
+    <argument
+        android:name="Digital"
+        app:argType="boolean" />
+    <argument
+        android:name="Favorite"
+        app:argType="boolean" />
+    <argument
+        android:name="Rating"
+        app:argType="string"
+        app:nullable="true" />
+    <argument
+        android:name="Id"
+        app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.backloggery.FilterList.FilterFragment"
+        android:label="FilterFragment" />
+    <fragment
+        android:id="@+id/eraselistFragment"
+        android:name="com.example.backloggery.EraseList.EraselistFragment"
+        android:label="EraselistFragment" />
+    <fragment
+        android:id="@+id/infogameFragment"
+        android:name="com.example.backloggery.InfoGame.InfogameFragment"
+        android:label="InfogameFragment" >
+        <argument
+            android:name="Title"
+            app:argType="string" />
+    </fragment>
+</navigation>

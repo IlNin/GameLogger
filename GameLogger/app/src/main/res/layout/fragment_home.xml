@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="380dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/home_string"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:typeface="normal"
+            app:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/activity_string"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/latest_games"
+            app:srcCompat="@drawable/loading" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/latest_games"
+            android:layout_width="330dp"
+            android:layout_height="250dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/latest">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:text="@string/list_string"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/stats_string"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/latest_games" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/total_games_string"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+        <TextView
+            android:id="@+id/insert_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@+id/total"
+            app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+        <ImageView
+            android:id="@+id/beaten_image"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/beaten"
+            app:srcCompat="@drawable/check" />
+
+        <TextView
+            android:id="@+id/beaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/total_games_beaten_string"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toEndOf="@+id/beaten_image"
+            app:layout_constraintTop_toBottomOf="@+id/total" />
+
+        <TextView
+            android:id="@+id/insert_beaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@+id/beaten"
+            app:layout_constraintTop_toTopOf="@+id/beaten" />
+
+        <ImageView
+            android:id="@+id/digital_image"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beaten_image"
+            app:srcCompat="@drawable/digital" />
+
+        <TextView
+            android:id="@+id/digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/total_digital_games_string"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toEndOf="@+id/digital_image"
+            app:layout_constraintTop_toBottomOf="@+id/beaten" />
+
+        <TextView
+            android:id="@+id/insert_digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@+id/digital"
+            app:layout_constraintTop_toBottomOf="@+id/beaten" />
+
+        <ImageView
+            android:id="@+id/favorite_image"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/digital"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:text="@string/favorite_games_string"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/digital" />
+
+        <TextView
+            android:id="@+id/insert_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@+id/favorite"
+            app:layout_constraintTop_toTopOf="@+id/favorite" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/list_button"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="@string/add_string"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/add_button"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

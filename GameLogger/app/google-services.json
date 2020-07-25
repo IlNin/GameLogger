@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526130322223",
+    "firebase_url": "https://backloggery-8d4c8.firebaseio.com",
+    "project_id": "backloggery-8d4c8",
+    "storage_bucket": "backloggery-8d4c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526130322223:android:779b81fc4250c28e285fda",
+        "android_client_info": {
+          "package_name": "com.example.backloggery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526130322223-72aqstl036vcem7l1nl2navfcn8v8s02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.backloggery",
+            "certificate_hash": "79cb974a29a656b4e020b58d95b377fd96dafea7"
+          }
+        },
+        {
+          "client_id": "526130322223-3i9uchtnhqkpl5u3kesfvltcc9t913vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmIIcNHIijyUwxv-YBaYSWrUCD7yRmF7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526130322223-3i9uchtnhqkpl5u3kesfvltcc9t913vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

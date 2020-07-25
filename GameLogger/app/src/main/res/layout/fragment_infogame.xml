@@ -1,0 +1,195 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/insert_cover"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/common_google_signin_btn_text_dark_pressed" />
+
+            <TextView
+                android:id="@+id/developer"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:text="@string/developer_string"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/insert_developer"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/loading_string"
+                app:layout_constraintStart_toStartOf="@+id/developer"
+                app:layout_constraintTop_toBottomOf="@+id/developer" />
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="@string/publisher_string"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/developer"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/insert_publisher"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/loading_string"
+                app:layout_constraintStart_toStartOf="@+id/publisher"
+                app:layout_constraintTop_toBottomOf="@+id/publisher" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/info_string"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:typeface="normal"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert_cover" />
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/genre_string"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/developer"
+                app:layout_constraintTop_toBottomOf="@+id/insert_developer" />
+
+            <TextView
+                android:id="@+id/insert_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/loading_string"
+                app:layout_constraintStart_toStartOf="@+id/genre"
+                app:layout_constraintTop_toBottomOf="@+id/genre" />
+
+            <TextView
+                android:id="@+id/releaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/release_date_string"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/publisher"
+                app:layout_constraintTop_toBottomOf="@+id/insert_publisher" />
+
+            <TextView
+                android:id="@+id/insert_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/loading_string"
+                app:layout_constraintStart_toStartOf="@+id/releaseDate"
+                app:layout_constraintTop_toBottomOf="@+id/releaseDate" />
+
+            <TextView
+                android:id="@+id/Platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/platforms_string"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/developer"
+                app:layout_constraintTop_toBottomOf="@+id/genre" />
+
+            <TextView
+                android:id="@+id/insert_platform"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/loading_string"
+                app:layout_constraintStart_toStartOf="@+id/Platform"
+                app:layout_constraintTop_toBottomOf="@+id/Platform" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_string"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/developer"
+                app:layout_constraintTop_toBottomOf="@+id/insert_platform" />
+
+            <TextView
+                android:id="@+id/insert_description"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="@string/loading_string"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.173"
+                app:layout_constraintStart_toStartOf="@+id/description"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <ImageView
+                android:id="@+id/insert_back_cover"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert_description"
+                app:srcCompat="@color/common_google_signin_btn_text_dark_pressed" />
+
+            <TextView
+                android:id="@+id/disclaimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/disclaimer_string"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert_back_cover" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+</layout>

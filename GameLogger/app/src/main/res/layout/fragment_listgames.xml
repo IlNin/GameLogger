@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="380dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/list_games_string"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:typeface="normal"
+            app:fontFamily="sans-serif-condensed-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/numer_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/current_number_games_string"
+            android:textSize="10sp"
+            android:translationY="-12dp"
+            app:layout_constraintEnd_toStartOf="@+id/insert_number_games"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/insert_number_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="0"
+            android:textSize="10sp"
+            android:translationY="-12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/games"
+            android:layout_width="330dp"
+            android:layout_height="460dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/remove_filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/fui_bgEmail"
+            android:text="@string/remove_filter_string"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="8sp"
+            android:translationY="-3dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/games"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

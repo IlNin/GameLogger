@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">GameLogger</string>
+
+    <string name="title_screen">GameLogger - Title Screen</string>
+    <string name="about_screen">GameLogger - About</string>
+    <string name="home_screen">GameLogger - Home</string>
+    <string name="add_screen">GameLogger - Add Game</string>
+    <string name="list_screen">GameLogger - My Games</string>
+    <string name="delete_screen">GameLogger - Delete Game</string>
+    <string name="edit_screen">GameLogger - Edit Game</string>
+    <string name="filter_screen">GameLogger - Filter</string>
+    <string name="erase_screen">GameLogger - Erase DB</string>
+    <string name="info_screen">GameLogger - Game Info</string>
+
+    <string name="title_string">GAMELOGGER</string>
+    <string name="subtitle_string">Keep track of your games!</string>
+    <string name="start_button_string">Log in with a Google Account!</string>
+
+    <string name="about_string">ABOUT</string>
+    <string name="about_description">Inspired by the famous website <i>The Backloggery</i>, <i>GameLogger</i> is an application that helps you curate an archive of every game you have ever possessed so that you can keep track of them!\n\nAfter making your account (or signing in using your <i>Google</i> profile), you can add your games by specifying their title, developer and platform and other stats, such as if you have beaten them.</string>
+    <string name="about_description2">Once added, you can apply a filter to your list of games, so you can easily figure out which ones you still need to beat, which ones are your favorites, which ones you posses for a specific platform and so on.\n\nYour games will be saved on the Cloud using <i>Firestore</i>, so your archive will follow you across your devices!</string>
+    <string name="about_description3">By clicking the magnifying glass icon underneath your added games, you will also get further information about them, like their release date, descriptions and images, all provided by the <i>RAWG</i> database, which is the largest video game related database out there!</string>
+    <string name="about_description4">This application was made by Luca Sannino for the course Mobile Applications and Cloud Computing 2019/2020.\n(Note: every pixel art asset was drawn by myself, except for the tumbleweed gif which was made by the Reddit user MaxwellVador.)</string>
+
+    <string name="home_string">WELCOME</string>
+    <string name="activity_string"><u>The last games you have added:</u></string>
+    <string name="latest_title_string">Title: </string>
+    <string name="latest_platform_string">Platform: </string>
+    <string name="nogames_home_string">Looks like this list is empty! :(\nYou can fix this by pressing the \'Add New Game!\'\nbutton in the bottom right corner!</string>
+    <string name="stats_string"><u>Your stats:</u></string>
+    <string name="total_games_string">Total number of games:</string>
+    <string name="total_games_beaten_string">Beaten games:</string>
+    <string name="total_digital_games_string">Digital games:</string>
+    <string name="favorite_games_string">Favorite games:</string>
+    <string name="list_string">My list of games</string>
+    <string name="add_string">Add New Game!</string>
+
+    <string name="add_game_string">ADD NEW GAME</string>
+    <string name="name_string">Name*: </string>
+    <string name="developer_string">Developer: </string>
+    <string name="platform_string">Platform*: </string>
+    <string name="rating_string">Rating: </string>
+    <string name="beaten_string">Beaten?</string>
+    <string name="digital_string">Digital?</string>
+    <string name="favorite_string">Favorite?</string>
+    <string name="save_string">Save it!</string>
+    <string name="search_string">Search via API</string>
+    <string name="mandatory_string">*: this field is mandatory!</string>
+
+    <string name="list_games_string">MY GAMES</string>
+    <string name="filter_string">Apply Filter</string>
+    <string name="remove_filter_string">Remove Filter</string>
+
+    <string name="delete_string">DELETE GAME</string>
+    <string name="sure_string"><u>Are you sure you want to delete the following game?</u></string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
+
+    <string name="edit_string">EDIT GAME</string>
+    <string name="apply_changes_string">Apply changes</string>
+
+    <string name="current_number_games_string">Games found: </string>
+    <string name="nogames_list_string">Looks like this list is empty! :(\nYou can fix this by pressing the \'Add Game\'\n button in the options menu of the action bar!</string>
+
+    <string name="filter_uppercase_string">FILTER</string>
+    <string name="platform_select_string">Select the platforms (min 1):</string>
+    <string name="pc_string">PC</string>
+    <string name="switch_string">Nintendo Switch</string>
+    <string name="xbone_string">Xbox One</string>
+    <string name="ps4_string">PlayStation 4</string>
+    <string name="wiiu_string">Wii U</string>
+    <string name="psvita_string">PlayStation Vita</string>
+    <string name="ds3_string">Nintendo 3DS</string>
+    <string name="wii_string">Wii</string>
+    <string name="ps3_string">PlayStation 3</string>
+    <string name="xbox360_string">Xbox 360</string>
+    <string name="psp_string">PlayStation Portable</string>
+    <string name="ds_string">Nintendo DS</string>
+    <string name="xbox_string">Xbox</string>
+    <string name="cube_string">Nintendo GameCube</string>
+    <string name="ps2_string">PlayStation 2</string>
+    <string name="dreamcast_string">Dreamcast</string>
+    <string name="gba_string">Game Boy Advance</string>
+    <string name="n64_string">Nintendo 64</string>
+    <string name="psx_string">"PlayStation</string>
+    <string name="saturn_string">Sega Saturn</string>
+    <string name="gbc_string">Game Boy Color</string>
+    <string name="snes_string">Super NES</string>
+    <string name="genesis_string">Sega Genesis</string>
+    <string name="gb_string">Game Boy</string>
+    <string name="nes_string">NES</string>
+    <string name="master_string">Sega Master System</string>
+    <string name="watch_string">Game &#38; Watch</string>
+    <string name="other_string">Other</string>
+    <string name="rating_select_string">Select the ratings (min 1): </string>
+    <string name="norating_string">&#60;No Rating&#62;</string>
+    <string name="rating1_string">1/5</string>
+    <string name="rating2_string">2/5</string>
+    <string name="rating3_string">3/5</string>
+    <string name="rating4_string">4/5</string>
+    <string name="rating5_string">5/5</string>
+    <string name="other_select_string">Select games that are (min-max 1 for each category): </string>
+    <string name="any_string">Any</string>
+
+    <string name="erase_string">ERASE DATABASE</string>
+    <string name="warning_string">Warning: erasing the database is an irreversible process. If you still want to proceed, type the word &#34;imsure&#34; below and press the button!</string>
+
+    <string name="info_string">GAME INFO</string>
+    <string name="publisher_string">Publisher: </string>
+    <string name="genre_string">Genre: </string>
+    <string name="release_date_string">Release Date: </string>
+    <string name="platforms_string">Platforms: </string>
+    <string name="description_string">Description: </string>
+    <string name="loading_string">Loading...</string>
+    <string name="disclaimer_string">All text and images are taken from the RAWG Database</string>
+
+    <string name="beaten_recyclerview_string">Beaten</string>
+    <string name="unbeaten_string">Unbeaten</string>
+    <string name="digital_recyclerview_string">Digital</string>
+    <string name="physical_string">Physical</string>
+    <string name="favorite_recyclerview_string">Favorite</string>
+    <string name="unfavorite_string">Unfavorite</string>
+
+
+    <string name="logout_button_string">Log out</string>
+</resources>
