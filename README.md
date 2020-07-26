@@ -11,7 +11,7 @@ An Android Application written in Kotlin that helps you keep track of your colle
 
 <b>Comments:</b><br/>
 This was a very time-consuming, and yet rewarding, project. Before I could even write a line of code, I had to learn a lot of theory and follow countless tutorials so I could get the basics right on how to develop a Kotlin Android application. There was so much to unpack: the differences between activities and fragments, the concepts of ViewModels and LiveData, how to set up user-friendly layouts and navigation, how to communicate with Cloud databases in order to store and load data, how to offer more services by utilizing APIs, and so on. Even the mere act of adding a dynamic scrollable list, where the elements out of view are recycled in order to free up resources, can be a challenging task that requires multiple steps. 
-All in all, I'm quite happy with out the application turned out, especially its UI: my inspiration was a website called Backloggery (hence the app's interna name), and I tried my best to replicate a subset of its features on my app.
+All in all, I'm quite happy with out the application turned out, especially its UI: my inspiration was a website called Backloggery (hence the app's internal name), and I tried my best to replicate a subset of its features on my app.
 Sadly there's no written report this time since it wasn't asked by the professor.
 
 
